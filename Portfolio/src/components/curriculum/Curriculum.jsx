@@ -33,17 +33,17 @@ const Curriculum = () => {
                 <h2 className="text-3xl lg:text-5xl font-bold text-center mt-9 bg-gray-900 p-2">CURRICULUM</h2>
                 <div className="flex flex-col items-center ">
 
-                    <div className=" max-w-screen-xl items-center justify-center">
+                    <div className=" max-w-lg  md:max-w-screen-lg lg:max-w-screen-xl items-center justify-center">
                         <h2 className=" text-center text-2xl lg:text-3xl font-bold m-4 mt-8 ">EDUCATION</h2>
 
                         <div className="relative">
-                            <div className="flex items-center justify-center w-10 h-10 absolute  z-10 lg:left-20 top-1/2 hover:opacity-65">
+                            <div className="hidden md:hidden lg:flex items-center justify-center w-10 h-10 absolute  z-10 lg:left-20 top-1/2 hover:opacity-65">
                                 <button onClick={slideLeftEducation} >
                                     <img src="/img/prevbutton.png" alt="" className=" opacity-80" />
                                 </button>
                             </div>
                             <div >
-                                <button onClick={slideRightEducation} className="flex items-center justify-center w-10 h-10 absolute lg:right-20 z-10 top-1/2 hover:opacity-65">
+                                <button onClick={slideRightEducation} className=" hidden md:hidden lg:flex items-center justify-center w-10 h-10 absolute lg:right-20 z-10 top-1/2 hover:opacity-65">
                                     <img src="/img/nextbutton.png" alt="" className=" opacity-80" />
                                 </button>
                             </div>
@@ -56,17 +56,17 @@ const Curriculum = () => {
                             </Slider>
                         </div>
                     </div>
-                    <div className=" max-w-screen-xl ">
+                    <div className=" max-w-lg  md:max-w-screen-lg lg:max-w-screen-xl ">
                         <h2 className="text-center text-2xl lg:text-3xl font-bold m-4 mt-8">EXPERIENCE</h2>
                         <div className="relative" >
                             <div >
-                                <button onClick={slideLeftExperience} className=" md:hidden lg:flex items-center justify-center w-10 h-10 absolute z-10 lg:left-20 top-1/2 hover:opacity-65">
+                                <button onClick={slideLeftExperience} className="hidden  md:hidden lg:flex items-center justify-center w-10 h-10 absolute z-10 lg:left-20 top-1/2 hover:opacity-65">
 
                                     <img src="/img/prevbutton.png" alt="" className=" opacity-80" />
                                 </button>
                             </div>
                             <div >
-                                <button onClick={slideRightExperience} className="flex items-center justify-center w-10 h-10 absolute z-10 lg:right-20 top-1/2  hover:opacity-65">
+                                <button onClick={slideRightExperience} className="hidden md:hidden lg:flex items-center justify-center w-10 h-10 absolute z-10 lg:right-20 top-1/2  hover:opacity-65">
                                     <img src="/img/nextbutton.png" alt="" className=" opacity-80" />
                                 </button>
                             </div>

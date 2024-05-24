@@ -11,12 +11,16 @@ const Contact = () => {
     const handleSubmit = (e) => {
 
         Swal.fire({
-
+            position: "center",
             icon: "success",
             title: "Thank you for your message!",
             text: "I'll get in touch with you soon.",
             showConfirmButton: false,
-            timer: 2500
+            timer: 2500,
+            customClass: {
+                popup: 'mr-10' // Agrega una clase de margen izquierdo utilizando Tailwind CSS
+            },
+            width: '300px',
         });
     };
 
